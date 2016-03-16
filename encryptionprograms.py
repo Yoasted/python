@@ -81,6 +81,34 @@ def caesarcipher():
 
     print("\nReturning to Main Menu.\n\n")
     menu()
+
+def transpocipher():
+    mode = int(input("Do you want to encrypt or decrypt a message? 1 or 2: "))
+
+
+#THIS IS ALL ENCRYPTION, WILL IMPLENET DECRYPTION SECTION AFTERWARDS
+    
+    #String to be encrypted:
+    message = input("Input the message you want [en/de]crypted: ")
+
+    #Input the key
+    key = int(input("Input the key : "))
+
+    #Every possible symbol that can be encrypted.
+    CHARACTERS = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'
+
+    #Stores the encrypted form of the string.
+    translated = ''
+
+    #Capitalizes the string in the message.
+    #message = message.upper()
+
+    #Each string in ciphertext represents a column in the grid.
+    ciphertext = ([''] * key)
+
+    #Loop through each column in ciphertext.
+    
+    
     
 menu()
         
